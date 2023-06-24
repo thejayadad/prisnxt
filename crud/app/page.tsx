@@ -44,22 +44,21 @@ export default function Home() {
     </form>
 
     <ul className="rounded-lg shadow max-w-md mx-auto flex flex-col">
-    <li className="px-6 py-4">
-        <div className="flex justify-between">
-            <span className="font-semibold text-lg">List Item 1</span>
-            <span className="text-gray-500 text-xs">1 day ago</span>
-        </div>
-        <p className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
-    </li>
-    <li className="px-6 py-4 rounded-lg bg-gray-100">
+    <li className="px-6 py-4 rounded-lg bg-gray-100 mt-4 mb-8">
         <div className="flex justify-between">
             <span className="font-semibold text-lg">List Item 1</span>
             <span className="text-gray-500 text-xs">1 day ago</span>
         </div>
         <p className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
         <div className="flex justify-around mt-2">
-        <span className="text-gray-500 text-xs">Edit</span>
-            <span className="text-gray-500 text-xs">Delete</span>
+        <span className="text-xs "><button
+        className='border-2 bg-green-500 border-green-900 text-white hover:bg-green-300 p-2 ml-2 border-2 rounded'
+        >Edit</button></span>
+            <span className="text-gray-500 text-xs">
+              <button
+              className='bg-red-500 border-2 border-red-900 text-white hover:bg-red-300 p-2 ml-2 border-2 rounded'
+              >Delete</button>
+            </span>
         </div>
     </li>
     </ul>
